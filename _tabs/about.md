@@ -63,7 +63,7 @@ I have been constantly learning new technologies to find creative solutions to u
 ---
 <div class="row d-flex justify-content-center align-items-center">
     <p>
-        <a href="../assets/lib/ScottLozanoResume.pdf.pdf" target="blank" download><img align="center" alt="Download Resume" src="https://img.icons8.com/ios-filled/50/000000/resume.png" height="30" width="40" /></a>
+        <a href="../assets/img/ScottLozanoResume.pdf.pdf" target="blank" download><img align="center" alt="Download Resume" src="https://img.icons8.com/ios-filled/50/000000/resume.png" height="30" width="40" /></a>
     </p>
 </div>
 
