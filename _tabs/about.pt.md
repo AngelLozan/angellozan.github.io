@@ -58,6 +58,14 @@ Tenho aprendido constantemente novas tecnologias para encontrar soluções criat
         </span>
       </a>
    </div>
+---
+<h3>🕴️ Meu Currículo:</h3>
+---
+<div class="row d-flex justify-content-center align-items-center">
+    <p>
+        <a href="../assets/img/ScottLozanoResume.pdf.pdf" target="blank" download><img align="center" alt="Baixar Currículo" src="https://img.icons8.com/ios-filled/50/000000/resume.png" height="30" width="40" /></a>
+    </p>
+</div>
 
 ---
 <h3> 📲 Conecte-se comigo:</h3>
