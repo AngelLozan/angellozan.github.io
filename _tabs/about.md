@@ -33,9 +33,9 @@ Who I've coded software with:
 </a>
 <br>
 <br>
-         
 
-I’ve built and maintained multiple full stack applications, microservices and SaaS platforms in a variety of languages. From GoLang microservices to support an ecommerce behemoth to a full stack polygon Dapp, a Java SaaS platform, a Ruby on Rails clone of Zendesk with Web3 features like a built-in block explorer and wallet api integrations and four chrome extensions to help automate and a comprehensive art ticketing platforms. 
+
+I’ve built and maintained multiple full stack applications, microservices and SaaS platforms in a variety of languages. From GoLang microservices to support an ecommerce behemoth to a full stack polygon Dapp, a Java SaaS platform, a Ruby on Rails clone of Zendesk with Web3 features like a built-in block explorer and wallet api integrations and four chrome extensions to help automate and a comprehensive art ticketing platforms.
 
 I have been constantly learning new technologies to find creative solutions to unique issues of automation, social engagement or advertisement. Puppeteer, Node, React, Vue, Next, Ruby, Rails and Redux. I'm learning GoLang at the moment.
 
@@ -46,7 +46,7 @@ I have been constantly learning new technologies to find creative solutions to u
          <span class="p2">
             <img alt="profile views" title="Who's watching?" src="https://komarev.com/ghpvc/?username=angellozan&label=Profile%20views&color=0e75b6&style=for-the-badge" alt="angellozan" />
          </span>
-      </a> 
+      </a>
       <a href="https://github.com/AngelLozan?tab=followers">
         <span class="p2">
          <img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.demolab.com/github/followers/AngelLozan?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=person-add&label=Follow&logoColor=white"/>
@@ -58,6 +58,14 @@ I have been constantly learning new technologies to find creative solutions to u
         </span>
       </a>
    </div>
+---
+<h3>🕴️ My Resume:</h3>
+---
+<div class="row d-flex justify-content-center align-items-center">
+    <p>
+        <a href="../assets/img/ScottLozanoResume.pdf.pdf" target="blank" download><img align="center" alt="Download Resume" src="https://img.icons8.com/ios-filled/50/000000/resume.png" height="30" width="40" /></a>
+    </p>
+</div>
 
 ---
 <h3> 📲 Connect with me:</h3>
@@ -163,5 +171,3 @@ I have been constantly learning new technologies to find creative solutions to u
 
 
 <p>&nbsp;<img align="center" src="https://github-profile-trophy.vercel.app/?username=AngelLozan&theme=onedark" alt="angellozan" /></p>
-
-
