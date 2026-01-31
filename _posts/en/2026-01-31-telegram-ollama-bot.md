@@ -45,7 +45,7 @@ This guide uses a **Raspberry Pi 4** (4+ GB RAM). It also works on other Debian-
 
 **You need:**
 
-- **Raspberry Pi 4**, 4+ GB RAM
+- **Raspberry Pi 4**, 8+ GB RAM
 - **Official Raspberry Pi power adapter** (other adapters often cause instability)
 - **External storage**: 1+ TB USB3; SSD recommended (we boot from this, not a microSD card)
 
@@ -105,8 +105,8 @@ Use **Raspberry Pi OS (Legacy) 64-bit Lite** (no desktop). It’s based on Debia
 
 **General tab:**
 
-- **Hostname**: e.g. `raspibolt` (or any name).
-- **Username and password**: enable and set username `admin` and password **[ A ]**.
+- **Hostname**: e.g. `raspillama` (or any name).
+- **Username and password**: enable and set username `admin` (or whatever you choose) and password **[ A ]**.
 - **Wi‑Fi** (if used): set SSID, password, and Wi‑Fi country (e.g. US).
 - **Locale**: set timezone and keyboard.
 
@@ -140,10 +140,10 @@ Connect to the Pi over your network.
 
 Give the Pi a few minutes to boot and get an IP address.
 
-On your computer, open a terminal and ping the hostname you set (e.g. `raspibolt`):
+On your computer, open a terminal and ping the hostname you set (e.g. `raspillama`):
 
 ```bash
-ping raspibolt.local
+ping raspillama.local
 ```
 
 Press Ctrl‑C to stop. If that fails, find the Pi’s IP (e.g. via your router or the [Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/remote-access.html)).
@@ -154,12 +154,12 @@ Press Ctrl‑C to stop. If that fails, find the Pi’s IP (e.g. via your router 
 - **macOS / Linux:** In a terminal:
 
 ```bash
-ssh admin@raspibolt.local
+ssh admin@raspillama.local
 # or
 ssh admin@192.168.0.20
 ```
 
-Use password **[ A ]** when prompted (host: `raspibolt.local` or your Pi IP, port: 22, user: `admin`).
+Use password **[ A ]** when prompted (host: `raspillama.local` or your Pi IP, port: 22, user: `admin`).
 
 ### Command line basics
 
@@ -193,7 +193,7 @@ ssh-keygen -t rsa -b 4096
 Copy your public key to the Pi (one-time password **[ A ]**):
 
 ```bash
-ssh-copy-id admin@raspibolt.local
+ssh-copy-id admin@raspillama.local
 ```
 
 **On Windows:** Use [Configure “No Password SSH Keys Authentication” with PuTTY](https://www.ssh.com/academy/ssh/putty/windows/puttygen) and then add the public key to `~/.ssh/authorized_keys` on the Pi with permissions `700` on `~/.ssh`.

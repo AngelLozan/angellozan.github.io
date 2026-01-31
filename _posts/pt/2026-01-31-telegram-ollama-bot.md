@@ -41,11 +41,11 @@ Prepare seu hardware e credenciais antes de começar.
 
 ### Raspberry Pi e hardware
 
-Este guia usa um **Raspberry Pi 4** (4+ GB de RAM). Também funciona em outras máquinas baseadas em Debian (VMs na nuvem, etc.) usando os mesmos comandos.
+Este guia usa um **Raspberry Pi 4** (8+ GB de RAM). Também funciona em outras máquinas baseadas em Debian (VMs na nuvem, etc.) usando os mesmos comandos.
 
 **Você precisa:**
 
-- **Raspberry Pi 4**, 4+ GB de RAM
+- **Raspberry Pi 4**, 8+ GB de RAM
 - **Adaptador de energia oficial do Raspberry Pi** (outros adaptadores frequentemente causam instabilidade)
 - **Armazenamento externo**: 1+ TB USB3; SSD recomendado (iniciamos a partir disso, não de um cartão microSD)
 
@@ -105,8 +105,8 @@ Use **Raspberry Pi OS (Legacy) 64-bit Lite** (sem desktop). É baseado no Debian
 
 **Aba Geral:**
 
-- **Hostname**: por exemplo, `raspibolt` (ou qualquer nome).
-- **Nome de usuário e senha**: ative e defina o nome de usuário `admin` e senha **[ A ]**.
+- **Hostname**: por exemplo, `raspillama` (ou qualquer nome).
+- **Nome de usuário e senha**: ative e defina o nome de usuário `admin` (ou o que você escolher) e senha **[ A ]**.
 - **Wi‑Fi** (se usado): defina SSID, senha e país Wi‑Fi (por exemplo, BR).
 - **Localidade**: defina fuso horário e teclado.
 
@@ -140,10 +140,10 @@ Conecte-se ao Pi pela sua rede.
 
 Dê alguns minutos para o Pi inicializar e obter um endereço IP.
 
-No seu computador, abra um terminal e faça ping no hostname que você definiu (por exemplo, `raspibolt`):
+No seu computador, abra um terminal e faça ping no hostname que você definiu (por exemplo, `raspillama`):
 
 ```bash
-ping raspibolt.local
+ping raspillama.local
 ```
 
 Pressione Ctrl‑C para parar. Se isso falhar, encontre o IP do Pi (por exemplo, via seu roteador ou a [documentação do Raspberry Pi](https://www.raspberrypi.com/documentation/computers/remote-access.html)).
@@ -154,12 +154,12 @@ Pressione Ctrl‑C para parar. Se isso falhar, encontre o IP do Pi (por exemplo,
 - **macOS / Linux:** Em um terminal:
 
 ```bash
-ssh admin@raspibolt.local
+ssh admin@raspillama.local
 # ou
 ssh admin@192.168.0.20
 ```
 
-Use a senha **[ A ]** quando solicitado (host: `raspibolt.local` ou seu IP do Pi, porta: 22, usuário: `admin`).
+Use a senha **[ A ]** quando solicitado (host: `raspillama.local` ou seu IP do Pi, porta: 22, usuário: `admin`).
 
 ### Noções básicas da linha de comando
 
@@ -193,7 +193,7 @@ ssh-keygen -t rsa -b 4096
 Copie sua chave pública para o Pi (senha única **[ A ]**):
 
 ```bash
-ssh-copy-id admin@raspibolt.local
+ssh-copy-id admin@raspillama.local
 ```
 
 **No Windows:** Use [Configurar "Autenticação de Chaves SSH Sem Senha" com PuTTY](https://www.ssh.com/academy/ssh/putty/windows/puttygen) e depois adicione a chave pública a `~/.ssh/authorized_keys` no Pi com permissões `700` em `~/.ssh`.
